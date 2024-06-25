@@ -1,7 +1,7 @@
 `define FRQ1 26'd4999_9999
 `define FRQ1BIT 26
-`define FRQ2 22'd249_9999
-`define FRQ2BIT 22
+`define FRQ2 25'd249_9999
+`define FRQ2BIT 25
 `define FRQ10 23'd499_9999
 `define FRQ10BIT 23
 `define FRQ100 19'd49_9999

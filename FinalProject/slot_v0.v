@@ -21,6 +21,7 @@ wire state_0, state_1, state_2, state_3;
 wire [1:0] clk_s;
 wire [3:0] ssd_in;
 wire [3:0] new_num_0, current_num_0, last_num_0, new_num_1, current_num_1, last_num_1, new_num_2, current_num_2, last_num_2, new_num_3, current_num_3, last_num_3;
+wire [9:0] coins;
 
 clock_generator U_CG(
     .clk(clk),
@@ -87,10 +88,19 @@ music_led_controller U_MLC(
     .rst_n(rst_n),
     .volume_up_in(volume_up),
     .volume_dw_in(volume_dw), 
+    .new_num_0(new_num_0),
+    .new_num_1(new_num_1),
+    .new_num_2(new_num_2),
+    .new_num_3(new_num_3),
+    .power(power),
     .current_num_0(current_num_0),
     .current_num_1(current_num_1),
     .current_num_2(current_num_2),
     .current_num_3(current_num_3),
+    .last_num_0(last_num_0),
+    .last_num_1(last_num_1),
+    .last_num_2(last_num_2),
+    .last_num_3(last_num_3),
     .state_0(state_0),
     .state_1(state_1),
     .state_2(state_2),
@@ -99,6 +109,7 @@ music_led_controller U_MLC(
     .audio_lrck(audio_lrck),
     .audio_sck(audio_sck),
     .audio_sdin(audio_sdin),
+    .coins(coins),
     .leds(leds) 
 );
 scanctl U_SC(

@@ -14,15 +14,16 @@ always@(*) begin
     state = (power & ~rod);
 
     if (state) begin
-        temp_last_num <= current_num;
-        temp_current_num <= new_num;
-        temp_new_num <= rand % range;
+        temp_last_num = current_num;
+        temp_current_num = new_num;
+        temp_new_num = rand % range;
     end
     else begin
         temp_last_num = last_num;
         temp_current_num = current_num;
         temp_new_num = new_num;
     end
+
 end
 
 always@(posedge clk or negedge rst_n) begin
