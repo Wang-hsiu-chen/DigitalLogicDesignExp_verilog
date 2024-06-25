@@ -1,0 +1,82 @@
+$date
+	Mon Mar 06 17:39:12 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module BinarytoGrayCode_TB $end
+$var wire 1 ! Z $end
+$var wire 1 " Y $end
+$var wire 1 # X $end
+$var wire 1 $ W $end
+$var reg 1 % A $end
+$var reg 1 & B $end
+$var reg 1 ' C $end
+$var reg 1 ( D $end
+$scope module U0 $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var wire 1 ' c $end
+$var wire 1 ( d $end
+$var wire 1 $ w $end
+$var wire 1 # x $end
+$var wire 1 " y $end
+$var wire 1 ! z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#2
+1!
+1(
+#4
+1"
+0(
+1'
+#6
+1#
+1(
+#8
+0!
+0(
+0'
+1&
+#10
+1$
+1(
+#12
+0#
+0(
+1'
+#14
+1!
+1(
+#16
+0"
+0(
+0'
+0&
+1%
+#18
+0!
+1(
+#20
+0$
+0(
+0%
