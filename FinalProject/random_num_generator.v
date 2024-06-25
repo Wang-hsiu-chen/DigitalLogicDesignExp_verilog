@@ -1,25 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/06/02 18:05:37
-// Design Name: 
-// Module Name: random_num_generator
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module random_num_generator(
     input clk, rst_n,
     input power, rod,
@@ -45,6 +23,7 @@ always@(*) begin
         temp_current_num = current_num;
         temp_new_num = new_num;
     end
+
 end
 
 always@(posedge clk or negedge rst_n) begin

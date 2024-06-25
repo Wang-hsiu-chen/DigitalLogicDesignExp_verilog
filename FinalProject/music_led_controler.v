@@ -1,9 +1,8 @@
 module music_led_controller( 
-    input clk, clk_2, clk_100, clk_10K, rst_n,
+    input clk, clk_2, clk_20, clk_100, clk_10K, rst_n,
     input volume_up_in, volume_dw_in,
     input state_0, state_1, state_2, state_3,
     input [3:0] current_num_0, current_num_1, current_num_2, current_num_3,
-    input music1,
     output audio_mclk,
     output audio_lrck,
     output audio_sck,
@@ -17,6 +16,7 @@ wire [21:0] tune_left, tune_right;
 
 state_detect U_ST(
     .clk_2(clk_2),
+    .rst_n(rst_n),
     .current_num_0(current_num_0),
     .current_num_1(current_num_1),
     .current_num_2(current_num_2),
@@ -31,13 +31,13 @@ state_detect U_ST(
     .leds(leds)
 );
 one_pulse U_OP(
-   .clk(clk_2),
+   .clk(clk_20),
    .rst_n(rst_n),
    .in_trig(music_1),
    .out_pulse(op_music_1)
 );
 music_select U_MS(
-    .clk(clk_2),
+    .clk(clk_20),
     .rst_n(rst_n),
     .music_0(music_0),
     .music_1(op_music_1),
@@ -85,5 +85,4 @@ speaker_control Usc(
     .audio_sck(audio_sck), // serial clock 
     .audio_din(audio_sdin) // serial audio data input 
 );
-
 endmodule

@@ -1,25 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/06/02 18:07:30
-// Design Name: 
-// Module Name: speaker_control
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module speaker_control(
     input fcrystal,
     input rst_n,
@@ -117,5 +95,28 @@ always @* begin
             serial_tem = 1'b0;
     endcase
 end
-  
+
+
+always @(posedge audio_lrck or negedge rst_n) begin
+    if (~rst_n) begin
+        left_tem <= 16'd0;
+        right_tem <= 16'd0;
+    end
+    else begin
+        left_tem <= audio_left;
+        right_tem <= audio_right;
+    end
+end
+
+always @(negedge audio_sck or negedge rst_n) begin
+    if (~rst_n) begin
+        cnt <= 5'd0;
+        audio_din <= 1'd0;
+    end
+    else begin
+        cnt <= cnt_tem;
+        audio_din <= serial_tem;
+    end
+end   
+    
 endmodule

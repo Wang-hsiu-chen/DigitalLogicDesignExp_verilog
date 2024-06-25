@@ -14,16 +14,9 @@ module state_detect(
     input state_1,
     input state_2,
     input state_3,
-//    input power_pulse,
-//    input power_neg_pulse,
-//    input state_0_pulse,
-//    input state_1_pulse,
-//    input state_2_pulse,
-//    input state_3_pulse,
     output reg music_0,
     output reg music_1,
     output reg music_2,
-    // output reg [9:0] coins,
     output reg [15:0] leds
 );
 

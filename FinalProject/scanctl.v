@@ -1,29 +1,7 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/06/02 18:06:14
-// Design Name: 
-// Module Name: scan_ctl
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 `define BCD_BIT_WIDTH 4
 `define SSD_NUM 4
 
-module scan_ctl(
+module scanctl(
   ssd_ctl, // ssd display control signal 
   ssd_in, // output to ssd display
   in_0, // 1st input

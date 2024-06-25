@@ -1,25 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/06/02 18:05:06
-// Design Name: 
-// Module Name: one_pulse
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module one_pulse(
     clk, // clock input
     rst_n, //active low reset
@@ -35,7 +13,6 @@ reg out_pulse; // output one pulse
 // Declare internal nodes
 reg in_trig_delay;
 // Buffer input
-wire out_pulse_next;
 always @(posedge clk or negedge rst_n)
     if (~rst_n)
         in_trig_delay <= 1'b0;
