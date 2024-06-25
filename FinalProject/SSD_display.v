@@ -1,3 +1,25 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2023/06/02 18:08:17
+// Design Name: 
+// Module Name: SSD_display
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
 `define SS_0 8'b00000011
 `define SS_1 8'b10011111
 `define SS_2 8'b00100101
@@ -9,7 +31,7 @@
 `define SS_8 8'b00000001
 `define SS_9 8'b00001001
 
-module SSDdisplay(
+module SSD_display(
     input [3:0] ssd_in,
     output reg [7:0] segs
 );
