@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 10 13:51:02 2023
+# Process ID: 42044
+# Current directory: C:/Users/TWang/Desktop/DLDE/verilog/lab05_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29372 C:\Users\TWang\Desktop\DLDE\verilog\lab05_1\lab05_1.xpr
+# Log file: C:/Users/TWang/Desktop/DLDE/verilog/lab05_1/vivado.log
+# Journal file: C:/Users/TWang/Desktop/DLDE/verilog/lab05_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 13:51:24 2023...

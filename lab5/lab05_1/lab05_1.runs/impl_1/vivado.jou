@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Mar 27 22:28:28 2022
+# Process ID: 14796
+# Current directory: C:/Users/user/Desktop/All_File/Lecture/Freashman/Second_Semester/Logic_Design_Experiment/Experiment/lab05/lab05_1/lab05_1.runs/impl_1
+# Command line: vivado.exe -log Forty_sec_down_counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Forty_sec_down_counter.tcl -notrace
+# Log file: C:/Users/user/Desktop/All_File/Lecture/Freashman/Second_Semester/Logic_Design_Experiment/Experiment/lab05/lab05_1/lab05_1.runs/impl_1/Forty_sec_down_counter.vdi
+# Journal file: C:/Users/user/Desktop/All_File/Lecture/Freashman/Second_Semester/Logic_Design_Experiment/Experiment/lab05/lab05_1/lab05_1.runs/impl_1\vivado.jou
+# Running On: Andy-laptop, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16487 MB
+#-----------------------------------------------------------
+source Forty_sec_down_counter.tcl -notrace
